@@ -3,12 +3,14 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
+import FeaturedCarousel from '@/components/FeaturedCarousel'
 
 const MAX_DISPLAY = 2
 
 export default function Home({ posts }) {
   return (
     <>
+      <FeaturedCarousel />
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-3xl">
           <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
@@ -104,7 +106,7 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-     <br /> 
+      <br />
       <section className="relative overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#5865F2] via-[#7C5CFC] to-[#EB459E]" />

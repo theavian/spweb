@@ -104,6 +104,7 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
+     <br/>
       <section className="relative overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#5865F2] via-[#7C5CFC] to-[#EB459E]" />

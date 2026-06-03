@@ -9,13 +9,38 @@ const MAX_DISPLAY = 2
 export default function Home({ posts }) {
   return (
     <>
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+              About Us
+            </span>
+            <h2 className="mt-4 text-4xl font-bold text-gray-900 dark:text-white">
+              Australian Based Digital Design and Development Studio
+            </h2>
+            <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
+              Sproutling Studios is an indie game studio based in Australia that specializes in exploring the 
+              realms of visual art and animation, along with creative Minecraft content creation to bring innovative 
+              gameplay to craft unique experiences.
+            </p>
+            <div className="mt-8">
+              <Link
+                href="/about"
+                className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium transition-all duration-300 hover:bg-blue-700 hover:scale-105"
+              >
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
             What's New
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
+            The latest news on games, development updates, and major announcements.
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">

@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Sproutling studios',
   author: 'Tails Azimuth',
   headerTitle: 'Sproutling studios',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'Australian Based Digital Design and Development Studio',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',

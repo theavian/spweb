@@ -12,8 +12,8 @@ export default function Page() {
   return (
     <>
       {/* Existing About Section */}
-      <div className="container mx-auto">
-        <div className="mx-auto max-w-3xl">
+      <div className="container">
+        <div className="max-w-3xl">
           <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-6xl dark:text-gray-100">
             About Us
           </h1>

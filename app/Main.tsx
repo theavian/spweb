@@ -19,8 +19,8 @@ export default function Home({ posts }) {
           </span>
           <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
             Sproutling Studios is an indie game studio based in Australia that specializes in
-            exploring the realms of visual art and animation, along with creative Minecraft
-            content creation to bring innovative gameplay to craft unique experiences.
+            exploring the realms of visual art and animation, along with creative Minecraft content
+            creation to bring innovative gameplay to craft unique experiences.
           </p>
           <div className="mt-8">
             <Link
@@ -104,7 +104,7 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-     <br />
+     <br /> 
       <section className="relative overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#5865F2] via-[#7C5CFC] to-[#EB459E]" />

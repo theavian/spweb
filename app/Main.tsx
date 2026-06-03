@@ -19,7 +19,9 @@ export default function Home({ posts }) {
               Australian Based Digital Design and Development Studio
             </h2>
             <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
-              Sproutling Studios is an indie game studio based in Australia that specializes in exploring the realms of visual art and animation, along with creative Minecraft content creation to bring innovative gameplay to craft unique experiences.
+              Sproutling Studios is an indie game studio based in Australia that specializes in 
+              exploring the realms of visual art and animation, along with creative Minecraft
+              content creation to bring innovative gameplay to craft unique experiences.
             </p>
             <div className="mt-8">
               <Link

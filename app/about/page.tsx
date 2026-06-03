@@ -49,7 +49,7 @@ export default function Page() {
           <div className="space-y-20">
             {allAuthors.map((author) => (
               <div
-                key={author.slugAsParams}
+                key={author.slug}
                 className="items-start xl:grid xl:grid-cols-3 xl:gap-x-10"
               >
                 {/* Author Card */}

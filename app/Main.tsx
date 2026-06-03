@@ -9,7 +9,6 @@ const MAX_DISPLAY = 2
 export default function Home({ posts }) {
   return (
     <>
-      <section className="py-2">
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
             <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
@@ -33,7 +32,6 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-      </section>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">

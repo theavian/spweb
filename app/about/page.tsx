@@ -68,15 +68,15 @@ export default function Page() {
                   )}
 
                   <div className="mt-4 flex space-x-3">
-                     {author.email && <SocialIcon kind="mail" href={`mailto:${author.email}`}/>}
+                    {author.email && <SocialIcon kind="mail" href={`mailto:${author.email}`}/>} 
 
-                     {author.github && <SocialIcon kind="github" href={author.github}/>}
+                    {author.github && <SocialIcon kind="github" href={author.github}/>} 
 
-                     {author.linkedin && <SocialIcon kind="linkedin" href={author.linkedin}/>}
+                    {author.linkedin && <SocialIcon kind="linkedin" href={author.linkedin}/>} 
 
-                     {author.twitter && <SocialIcon kind="x" href={author.twitter}/>}
+                    {author.twitter && <SocialIcon kind="x" href={author.twitter}/>} 
 
-                     {author.bluesky && <SocialIcon kind="bluesky" href={author.bluesky}/>}
+                    {author.bluesky && <SocialIcon kind="bluesky" href={author.bluesky}/>} 
                   </div>
                 </div>
 

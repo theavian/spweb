@@ -111,7 +111,7 @@ export default function Home({ posts }) {
         <div className="absolute inset-0 bg-gradient-to-br from-[#5865F2] via-[#7C5CFC] to-[#EB459E]" />
 
         {/* Glow Effects */}
-        <div className="absolute top-1/4 left h-64 w-64 rounded-full bg-white/10 blur-3xl" />
+        <div className="left absolute top-1/4 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
         <div className="absolute right-1/4 bottom-1/4 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
 
         {/* Content */}

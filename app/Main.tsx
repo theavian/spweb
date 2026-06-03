@@ -111,7 +111,7 @@ export default function Home({ posts }) {
         <div className="absolute inset-0 bg-gradient-to-br from-[#5865F2] via-[#7C5CFC] to-[#EB459E]" />
 
         {/* Glow Effects */}
-        <div className="absolute left-1/4 top-1/4 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
+        <div className="absolute top-1/4 left h-64 w-64 rounded-full bg-white/10 blur-3xl" />
         <div className="absolute right-1/4 bottom-1/4 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
 
         {/* Content */}
@@ -121,8 +121,8 @@ export default function Home({ posts }) {
           </h2>
 
           <p className="mb-8 max-w-2xl text-base text-white/90 sm:text-lg md:text-xl">
-            Connect with fellow members, discuss projects, get support, and stay
-            updated with the latest sproutling studios news.
+            Connect with fellow members, discuss projects, get support, and stay updated with the
+            latest sproutling studios news.
           </p>
 
           <a
@@ -133,7 +133,7 @@ export default function Home({ posts }) {
           >
             Join Discord
           </a>
-         </div>
+        </div>
       </section>
       {siteMetadata.newsletter?.provider && (
         <div className="flex items-center justify-center pt-4">

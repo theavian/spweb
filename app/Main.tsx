@@ -9,24 +9,22 @@ const MAX_DISPLAY = 2
 export default function Home({ posts }) {
   return (
     <>
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="bg-gray-50 py-2">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="text-sm font-semibold tracking-wider text-blue-600 uppercase">
               About Us
             </span>
             <h2 className="mt-4 text-4xl font-bold text-gray-900 dark:text-white">
               Australian Based Digital Design and Development Studio
             </h2>
             <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
-              Sproutling Studios is an indie game studio based in Australia that specializes in exploring the 
-              realms of visual art and animation, along with creative Minecraft content creation to bring innovative 
-              gameplay to craft unique experiences.
+              Sproutling Studios is an indie game studio based in Australia that specializes in exploring the realms of visual art and animation, along with creative Minecraft content creation to bring innovative gameplay to craft unique experiences.
             </p>
             <div className="mt-8">
               <Link
                 href="/about"
-                className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium transition-all duration-300 hover:bg-blue-700 hover:scale-105"
+                className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700"
               >
                 Learn More
               </Link>

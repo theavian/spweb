@@ -9,29 +9,29 @@ const MAX_DISPLAY = 2
 export default function Home({ posts }) {
   return (
     <>
-        <div className="container mx-auto px-6">
-          <div className="mx-auto max-w-3xl">
-            <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
-              About Us
-            </h1>
-            <span className="text-sm font-semibold tracking-wider text-blue-600 uppercase">
-              Australian Based Digital Design and Development Studio
-            </span>
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
-              Sproutling Studios is an indie game studio based in Australia that specializes in
-              exploring the realms of visual art and animation, along with creative Minecraft
-              content creation to bring innovative gameplay to craft unique experiences.
-            </p>
-            <div className="mt-8">
-              <Link
-                href="/about"
-                className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700"
-              >
-                Learn More
-              </Link>
-            </div>
+      <div className="container mx-auto px-6">
+        <div className="mx-auto max-w-3xl">
+          <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
+            About Us
+          </h1>
+          <span className="text-sm font-semibold tracking-wider text-blue-600 uppercase">
+            Australian Based Digital Design and Development Studio
+          </span>
+          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
+            Sproutling Studios is an indie game studio based in Australia that specializes in
+            exploring the realms of visual art and animation, along with creative Minecraft
+            content creation to bring innovative gameplay to craft unique experiences.
+          </p>
+          <div className="mt-8">
+            <Link
+              href="/about"
+              className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700"
+            >
+              Learn More
+            </Link>
           </div>
         </div>
+      </div>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
@@ -104,7 +104,7 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-     <br/>
+     <br />
       <section className="relative overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#5865F2] via-[#7C5CFC] to-[#EB459E]" />

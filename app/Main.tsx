@@ -15,7 +15,7 @@ export default function Home({ posts }) {
             <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
               About Us
             </h1>
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+            <span className="text-sm font-semibold tracking-wider text-blue-600 uppercase">
               Australian Based Digital Design and Development Studio
             </span>
             <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">

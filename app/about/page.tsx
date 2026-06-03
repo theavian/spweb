@@ -19,15 +19,14 @@ export default function Page() {
               About Us
             </h1>
 
-            <span className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+            <span className="text-sm font-semibold tracking-wider text-blue-600 uppercase">
               Australian Based Digital Design and Development Studio
             </span>
 
             <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
-              Sproutling Studios is an indie game studio based in Australia that
-              specializes in exploring the realms of visual art and animation,
-              along with creative Minecraft content creation to bring innovative
-              gameplay to craft unique experiences.
+              Sproutling Studios is an indie game studio based in Australia that specializes in
+              exploring the realms of visual art and animation, along with creative Minecraft
+              content creation to bring innovative gameplay to craft unique experiences.
             </p>
           </div>
         </div>
@@ -37,10 +36,7 @@ export default function Page() {
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="mb-12 text-center">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-100">
-              Meet Our Team
-            </h2>
-
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-100">Meet Our Team</h2>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
               The people behind Sproutling Studios.
             </p>
@@ -48,10 +44,7 @@ export default function Page() {
 
           <div className="space-y-20">
             {allAuthors.map((author) => (
-              <div
-                key={author.slug}
-                className="items-start xl:grid xl:grid-cols-3 xl:gap-x-10"
-              >
+              <div key={author.slug} className="items-start xl:grid xl:grid-cols-3 xl:gap-x-10">
                 {/* Author Card */}
                 <div className="flex flex-col items-center">
                   {author.avatar && (
@@ -64,56 +57,35 @@ export default function Page() {
                     />
                   )}
 
-                  <h3 className="pt-4 text-2xl font-bold">
-                    {author.name}
-                  </h3>
+                  <h3 className="pt-4 text-2xl font-bold">{author.name}</h3>
 
                   {author.occupation && (
-                    <p className="text-gray-500 dark:text-gray-400">
-                      {author.occupation}
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">{author.occupation}</p>
                   )}
 
                   {author.company && (
-                    <p className="text-gray-500 dark:text-gray-400">
-                      {author.company}
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">{author.company}</p>
                   )}
 
                   <div className="mt-4 flex space-x-3">
                     {author.email && (
-                      <SocialIcon
-                        kind="mail"
-                        href={`mailto:${author.email}`}
-                      />
+                      <SocialIcon kind="mail" href={`mailto:${author.email}`}/>
                     )}
 
                     {author.github && (
-                      <SocialIcon
-                        kind="github"
-                        href={author.github}
-                      />
+                      <SocialIcon kind="github" href={author.github}/>
                     )}
 
                     {author.linkedin && (
-                      <SocialIcon
-                        kind="linkedin"
-                        href={author.linkedin}
-                      />
+                      <SocialIcon kind="linkedin" href={author.linkedin}/>
                     )}
 
                     {author.twitter && (
-                      <SocialIcon
-                        kind="x"
-                        href={author.twitter}
-                      />
+                      <SocialIcon kind="x" href={author.twitter}/>
                     )}
 
                     {author.bluesky && (
-                      <SocialIcon
-                        kind="bluesky"
-                        href={author.bluesky}
-                      />
+                      <SocialIcon kind="bluesky" href={author.bluesky}/>
                     )}
                   </div>
                 </div>

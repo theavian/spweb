@@ -3,12 +3,14 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
+import FeaturedCarousel from '@/components/FeaturedCarousel'
 
 const MAX_DISPLAY = 2
 
 export default function Home({ posts }) {
   return (
     <>
+    <FeaturedCarousel />
     <br />
       <div className="container">
         <div className="max-w-3xl">

@@ -13,7 +13,7 @@ export default function FeaturedCarousel() {
       description:
         'Australian-based digital design and development studio creating websites, games, digital experiences and creative content.',
       href: '/about',
-      imgSrc: '/static/images/about.jpg',
+      imgSrc: '/static/images/twitter-card.png',
     },
     ...projectsData.slice(0, 2),
   ]

@@ -27,7 +27,7 @@ export default function Home({ posts }) {
               href="/about"
               className="bg-primary-500 hover:bg-primary-600 inline-flex rounded-lg px-5 py-3 font-medium text-white"
             >
-            Learn More →
+              Learn More →
             </Link>
           </div>
         </div>

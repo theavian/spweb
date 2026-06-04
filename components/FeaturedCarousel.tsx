@@ -72,7 +72,7 @@ export default function FeaturedCarousel() {
               <div key={card.title} className="w-full flex-shrink-0 px-4">
                 <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800">
                   {card.imgSrc && (
-                    <img src={card.imgSrc} alt={card.title} className="h-64 w-full object-cover"/>
+                    <img src={card.imgSrc} alt={card.title} className="h-64 w-full object-cover" />
                   )}
 
                   <div className="p-8">

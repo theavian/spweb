@@ -24,7 +24,7 @@ export default function Home({ posts }) {
           </p>
           <div className="mt-8">
           <Link
-          href={card.href || '/about'}
+          href='/about'
           className="bg-primary-500 hover:bg-primary-600 inline-flex rounded-lg px-5 py-3 font-medium text-white"
           >
             Learn More →

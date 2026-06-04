@@ -17,21 +17,18 @@ export default function Home({ posts }) {
           <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
             About Us
           </h1>
-          <span className="text-sm font-semibold tracking-wider text-blue-600 uppercase">
-            Australian Based Digital Design and Development Studio
-          </span>
           <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
             Sproutling Studios is an indie game studio based in Australia that specializes in
             exploring the realms of visual art and animation, along with creative Minecraft content
             creation to bring innovative gameplay to craft unique experiences.
           </p>
           <div className="mt-8">
-            <Link
-              href="/about"
-              className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700"
-            >
-              Learn More
-            </Link>
+          <Link
+          href={card.href || '/about'}
+          className="bg-primary-500 hover:bg-primary-600 inline-flex rounded-lg px-5 py-3 font-medium text-white"
+          >
+            Learn More →
+          </Link>
           </div>
         </div>
       </div>

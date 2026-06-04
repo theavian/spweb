@@ -36,7 +36,6 @@ export default function FeaturedCarousel() {
 
   return (
     <section className="relative py-16">
-
       <div className="relative mx-auto max-w-6xl">
         {/* Left Arrow */}
         <button

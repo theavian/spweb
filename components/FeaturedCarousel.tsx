@@ -36,12 +36,6 @@ export default function FeaturedCarousel() {
 
   return (
     <section className="relative py-16">
-      <div className="mb-8 text-center">
-        <h2 className="text-4xl font-bold tracking-tight">Featured</h2>
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
-          Learn more about our studio and projects.
-        </p>
-      </div>
 
       <div className="relative mx-auto max-w-6xl">
         {/* Left Arrow */}

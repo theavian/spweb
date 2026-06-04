@@ -37,9 +37,7 @@ export default function FeaturedCarousel() {
   return (
     <section className="relative py-16">
       <div className="mb-8 text-center">
-        <h2 className="text-4xl font-bold tracking-tight">
-          Featured
-        </h2>
+        <h2 className="text-4xl font-bold tracking-tight">Featured</h2>
         <p className="mt-2 text-gray-500 dark:text-gray-400">
           Learn more about our studio and projects.
         </p>
@@ -71,31 +69,20 @@ export default function FeaturedCarousel() {
             }}
           >
             {cards.map((card) => (
-              <div
-                key={card.title}
-                className="w-full flex-shrink-0 px-4"
-              >
+              <div key={card.title} className="w-full flex-shrink-0 px-4">
                 <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800">
                   {card.imgSrc && (
-                    <img
-                      src={card.imgSrc}
-                      alt={card.title}
-                      className="h-64 w-full object-cover"
-                    />
+                    <img src={card.imgSrc} alt={card.title} className="h-64 w-full object-cover"/>
                   )}
 
                   <div className="p-8">
-                    <h3 className="mb-3 text-3xl font-bold">
-                      {card.title}
-                    </h3>
+                    <h3 className="mb-3 text-3xl font-bold">{card.title}</h3>
 
-                    <p className="mb-6 text-gray-600 dark:text-gray-400">
-                      {card.description}
-                    </p>
+                    <p className="mb-6 text-gray-600 dark:text-gray-400">{card.description}</p>
 
                     <Link
                       href={card.href || '/projects'}
-                      className="inline-flex rounded-lg bg-primary-500 px-5 py-3 font-medium text-white hover:bg-primary-600"
+                      className="bg-primary-500 hover:bg-primary-600 inline-flex rounded-lg px-5 py-3 font-medium text-white"
                     >
                       Learn More →
                     </Link>
@@ -114,7 +101,7 @@ export default function FeaturedCarousel() {
               onClick={() => setCurrent(index)}
               className={`h-3 transition-all ${
                 current === index
-                  ? 'w-8 rounded-full bg-primary-500'
+                  ? 'bg-primary-500 w-8 rounded-full'
                   : 'w-3 rounded-full bg-gray-300 dark:bg-gray-600'
               }`}
             />

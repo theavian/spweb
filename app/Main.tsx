@@ -23,12 +23,12 @@ export default function Home({ posts }) {
             creation to bring innovative gameplay to craft unique experiences.
           </p>
           <div className="mt-8">
-          <Link
-          href='/about'
-          className="bg-primary-500 hover:bg-primary-600 inline-flex rounded-lg px-5 py-3 font-medium text-white"
-          >
+            <Link
+              href="/about"
+              className="bg-primary-500 hover:bg-primary-600 inline-flex rounded-lg px-5 py-3 font-medium text-white"
+            >
             Learn More →
-          </Link>
+            </Link>
           </div>
         </div>
       </div>

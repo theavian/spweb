@@ -7,9 +7,7 @@ import projectsData from '@/data/projectsData'
 export default function FeaturedCarousel() {
   const [current, setCurrent] = useState(0)
 
-  const cards = [
-    ...projectsData.slice(0, 3),
-  ]
+  const cards = [...projectsData.slice(0, 3)]
 
   useEffect(() => {
     const interval = setInterval(() => {

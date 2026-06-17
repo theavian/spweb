@@ -10,28 +10,50 @@ const MAX_DISPLAY = 2
 export default function Home({ posts }) {
   return (
     <>
-      <FeaturedCarousel />
-      <br />
-      <div className="container">
-        <div className="max-w-3xl">
-          <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
+      <section className="relative overflow-hidden rounded-3xl">
+        {/* Background Image */}
+        <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/static/images/hero-banner.jpg')",
+        }}
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+
+        {/* Content */}
+        <div className="relative z-10 flex min-h-[70vh] flex-col items-center justify-center px-6 text-center">
+          <h1 className="max-w-4xl text-5xl font-extrabold tracking-tight text-white md:text-7xl">
+            Sproutling Studios
+        </h1>
+
+        <p className="mt-6 max-w-2xl text-lg text-gray-200 md:text-xl">
+          Australian based digital design and development studio creating websites,
+          games, creative experiences and digital products.
+        </p>
+
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Link
+            href="/projects"
+            className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+          >
+            Explore Projects
+          </Link>
+
+          <Link
+            href="/about"
+            className="rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-black"
+          >
             About Us
-          </h1>
-          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
-            Sproutling Studios is an indie game studio based in Australia that specializes in
-            exploring the realms of visual art and animation, along with creative Minecraft content
-            creation to bring innovative gameplay to craft unique experiences.
-          </p>
-          <div className="mt-8">
-            <Link
-              href="/about"
-              className="bg-primary-500 hover:bg-primary-600 inline-flex rounded-lg px-5 py-3 font-medium text-white"
-            >
-              Learn More →
-            </Link>
-          </div>
+          </Link>
         </div>
       </div>
+      </section>
+
+      <div className="py-10" />
+      <FeaturedCarousel />
+      
       <br />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
@@ -105,6 +127,27 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
+      <br />
+      <div className="container">
+        <div className="max-w-3xl">
+          <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
+            About Us
+          </h1>
+          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
+            Sproutling Studios is an indie game studio based in Australia that specializes in
+            exploring the realms of visual art and animation, along with creative Minecraft content
+            creation to bring innovative gameplay to craft unique experiences.
+          </p>
+          <div className="mt-8">
+            <Link
+              href="/about"
+              className="bg-primary-500 hover:bg-primary-600 inline-flex rounded-lg px-5 py-3 font-medium text-white"
+            >
+              Learn More →
+            </Link>
+          </div>
+        </div>
+      </div>
       <br />
       <section className="relative overflow-hidden">
         {/* Background */}

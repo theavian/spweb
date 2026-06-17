@@ -8,14 +8,7 @@ export default function FeaturedCarousel() {
   const [current, setCurrent] = useState(0)
 
   const cards = [
-    {
-      title: 'About Sproutling Studios',
-      description:
-        'Australian-based digital design and development studio creating websites, games, digital experiences and creative content.',
-      href: '/about',
-      imgSrc: '/static/images/twitter-card.png',
-    },
-    ...projectsData.slice(0, 2),
+    ...projectsData.slice(0, 3),
   ]
 
   useEffect(() => {
